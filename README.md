@@ -4,7 +4,7 @@ Geometry processing mesh segmentation code using spectral clustering
 
 Objective: Practice using libigl to create shape decompositions using spectral clustering of various shape features
 
-<img src="imgs/seg-random-front.png" width=450/> <img src="imgs/seg-random-side.png" width=450/>
+<img src="imgs/seg-10-front.png" width=450/><img src="imgs/seg-10-side.png" width=450/>
 
 # Compile the code 
 
