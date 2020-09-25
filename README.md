@@ -43,7 +43,7 @@ For example, try:
 
 You will see the following images with faces randomly clustered (note: faces with the same color are in the same cluster): 
 
-<img src="imgs/seg-random-front.png" width=450/><img src="imgs/seg-random-side.png" width=450/>
+<img src="imgs/seg-random-front.png" width=400/><img src="imgs/seg-random-side.png" width=400/>
 
 (Fig. 2: random clustering with _K_=8 )
 
@@ -78,7 +78,7 @@ You will see the following images with faces randomly clustered (note: faces wit
   3. You might also want to optimize for the boundaries between clusters so they are as short as possible and pass through some important shape features, such as joints.
     
     
-<img src="imgs/seg-18-front.png" width=450/><img src="imgs/seg-18-side.png" width=450/>
+<img src="imgs/seg-18-front.png" width=400/><img src="imgs/seg-18-side.png" width=400/>
 
 (Fig. 3: results produced by the completed code with _K_=12; the boundaries in this example are not optimized. )
 
