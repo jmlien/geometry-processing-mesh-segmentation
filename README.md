@@ -2,14 +2,14 @@
 
 Geometry processing mesh segmentation code using spectral clustering 
 
-**Assignment Objective**: 
+## Assignment Objective
 
 - Practice using libigl to create shape decompositions using spectral clustering of various shape features
 - Understand the limitations in traditional shape segmentation methods
 
 <img src="imgs/seg-10-front.png" width=450/><img src="imgs/seg-10-side.png" width=450/>
 
-# Compile the code 
+## Compile the code 
 
 - use cmake on Linux/OSX systems 
 
@@ -43,4 +43,16 @@ You will see the following images with faces randomly clustered (note: faces wit
 
 <img src="imgs/seg-random-front.png" width=450/><img src="imgs/seg-random-side.png" width=450/>
 
+
+## Tasks
+
+### 1. Compute shape features
+
+
+### 2. Compute similarity matrix
+
+
+### 3. Cluster the faces using spectral clustering
+
+### 4. Post-processing to make sure that faces in the same cluster form a single connected component
 
