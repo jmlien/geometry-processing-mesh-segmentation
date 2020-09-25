@@ -47,7 +47,9 @@ You will see the following images with faces randomly clustered (note: faces wit
 ## Tasks
 
 ### 1. Compute shape features
-
+  1. Compute shape feature for each face. The feature is a number between 0 and 1
+  2. The first function is _per_face_avg_geodesic_ in per_face_feature.h/cpp. You need to compute face-to-face geodesic distances between all faces and then determine the average geodesic distance for each face as the feature for that face.
+  3. The first function is _per_face_SDF_ also in per_face_feature.h/cpp. Your objective is to determine the shape diameter function of the center of every face in the mesh. Note that this is the simplified version of the original shape diamter function which represents the features using a Gaussian Mixture Model. In our case, we simplified it to a single number, namely the average length of the shape diameter. 
 
 ### 2. Compute similarity matrix
 
