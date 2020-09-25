@@ -2,7 +2,10 @@
 
 Geometry processing mesh segmentation code using spectral clustering 
 
-Objective: Practice using libigl to create shape decompositions using spectral clustering of various shape features
+**Assignment Objective**: 
+
+- Practice using libigl to create shape decompositions using spectral clustering of various shape features
+- Understand the limitations in traditional shape segmentation methods
 
 <img src="imgs/seg-10-front.png" width=450/><img src="imgs/seg-10-side.png" width=450/>
 
