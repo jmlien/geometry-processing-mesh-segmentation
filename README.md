@@ -9,7 +9,7 @@ Geometry processing mesh segmentation code using spectral clustering
 
 <img src="imgs/seg-10-front.png" width=400/><img src="imgs/seg-10-side.png" width=400/>
 
-(Fig. 1: results produced by the completed code with _K_=10 )
+(Fig. 1: results produced by the completed code with _K_=10 using SDF)
 
 ## Compile the code 
 
@@ -80,5 +80,10 @@ You will see the following images with faces randomly clustered (note: faces wit
     
 <img src="imgs/seg-18-front.png" width=400/><img src="imgs/seg-18-side.png" width=400/>
 
-(Fig. 3: results produced by the completed code with _K_=12; Notice that the boundaries in this example are not optimized.)
+(Fig. 3: results produced by the completed code with _K_=12 using SDF; Notice that the boundaries in this example are not optimized.)
 
+### 5. Report in PDF (10%)
+  1. Show examples with various _K_ and shape decriptors. 
+  2. Describe what you learned in this assignment.
+  3. Describe the limitations in your implementation or in the method. This can be bugs that you are aware of or limitations of the technique used.  
+  4. Ideas on improving this work. 
