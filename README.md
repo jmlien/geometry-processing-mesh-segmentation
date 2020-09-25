@@ -21,7 +21,7 @@ Geometry processing mesh segmentation code using spectral clustering
   - the easiest way to compile the code on windows would be **cmake_gui** which creates solution files
   - Once the solution file and project files are created without errors, you should be ready to go
   
-#  Run the code
+##  Run the code
 
 Running the code is simple but get yourself familiar with the command line options first. 
 The main parameter is a shape file. You can find a few in ./mesh folder. 
