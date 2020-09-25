@@ -54,6 +54,11 @@ You will see the following images with faces randomly clustered (note: faces wit
   2. The first function is _per_face_avg_geodesic_ in per_face_feature.h/cpp. You need to compute face-to-face geodesic distances between all faces and then determine the average geodesic distance for each face as the feature for that face.
   3. The first function is _per_face_SDF_ also in per_face_feature.h/cpp. Your objective is to determine the shape diameter function of the center of every face in the mesh. Note that this is the simplified version of the original shape diameter function which represents the features using a Gaussian Mixture Model. In our case, we simplified it to a single number, namely the average length of the shape diameter. 
 
+
+<img src="imgs/sdf-front.png" width=400/><img src="imgs/sdf-side.png" width=400/>
+
+(Fig. 3: Simplified Shape diameter function features. )
+
 ### 2. Compute similarity matrix (30%)
   1. Determine the similarity matrix of the faces. The matrix has the dimension of |F|X|F| where |F| is the number of faces in the mesh.
     - implement your code in the first function _compute_similarity_maxtrix_ in similarity_maxtrix.cpp
@@ -80,7 +85,7 @@ You will see the following images with faces randomly clustered (note: faces wit
     
 <img src="imgs/seg-18-front.png" width=400/><img src="imgs/seg-18-side.png" width=400/>
 
-(Fig. 3: results produced by the completed code with _K_=12 using SDF; Notice that the boundaries in this example are not optimized.)
+(Fig. 4: results produced by the completed code with _K_=12 using SDF; Notice that the boundaries in this example are not optimized.)
 
 ### 5. Report in PDF (10%)
   1. Show examples with various _K_ and shape decriptors. 
