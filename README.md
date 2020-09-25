@@ -78,7 +78,7 @@ You will see the following images with faces randomly clustered (note: faces wit
   3. You might also want to optimize for the boundaries between clusters so they are as short as possible and pass through some important shape features, such as joints.
     
     
-<img src="imgs/simgs/seg-18-front.png" width=450/><img src="imgs/imgs/seg-18-side.png" width=450/>
+<img src="imgs/seg-18-front.png" width=450/><img src="imgs/seg-18-side.png" width=450/>
 
 (Fig. 3: results produced by the completed code with _K_=12; the boundaries in this example are not optimized. )
 
