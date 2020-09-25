@@ -46,15 +46,24 @@ You will see the following images with faces randomly clustered (note: faces wit
 
 ## Tasks
 
-### 1. Compute shape features
+### 1. Compute shape features (20%)
   1. Compute shape feature for each face. The feature is a number between 0 and 1
   2. The first function is _per_face_avg_geodesic_ in per_face_feature.h/cpp. You need to compute face-to-face geodesic distances between all faces and then determine the average geodesic distance for each face as the feature for that face.
   3. The first function is _per_face_SDF_ also in per_face_feature.h/cpp. Your objective is to determine the shape diameter function of the center of every face in the mesh. Note that this is the simplified version of the original shape diamter function which represents the features using a Gaussian Mixture Model. In our case, we simplified it to a single number, namely the average length of the shape diameter. 
 
-### 2. Compute similarity matrix
+### 2. Compute similarity matrix (30%)
+  1. Determine the similarity matrix of the faces. The matrix has the dimension of |F|X|F| where |F| is the number of faces in the mesh.
+    - implement your code in the first function _compute_similarity_maxtrix_ in similarity_maxtrix.cpp
+  2. A value of 0 means a pair of faces are very different and should be classified into different clusters. 
+  3. A large value means a pair of faces have high similairty  and should be classified into the same cluster. 
+  4. The matrix should be symmetric
+  5. Use shape features computed in the previous step to determine the similarity
+  6. What factors other than shape features should be considered in computing the values in the similarity matrix
 
+### 3. Cluster the faces using spectral clustering (20%)
+  1. Use the provided spectral clustering and K-means clustering methods to segment the faces into _K_ components
+    - implement your code in the first function _spectral_clustering_ in spectral_clustering.cpp
+  2. Save the cluster into proper format
 
-### 3. Cluster the faces using spectral clustering
-
-### 4. Post-processing to make sure that faces in the same cluster form a single connected component
+### 4. Post-processing to make sure that faces in the same cluster form a single connected component (40%)
 
