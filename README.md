@@ -36,6 +36,8 @@ For example, try:
 
   `./build/segment -g -k 8 ./mesh/Centaur-1000.obj`
 
-You will see the following images: 
-<img src="imgs/seg-random-front.png" width=450/> <img src="imgs/seg-random-side.png" width=450/>
+You will see the following images with faces randomly clustered (note: faces with the same color are in the same cluster): 
+
+<img src="imgs/seg-random-front.png" width=450/><img src="imgs/seg-random-side.png" width=450/>
+
 
