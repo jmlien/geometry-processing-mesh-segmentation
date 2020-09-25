@@ -13,12 +13,13 @@ Objective: Practice using libigl to create shape decompositions using spectral c
   `mkdir build; cd build; cmake ..; make`
 
 - use cmake on Windows Visual Studio
-  - the easies way will be through cmake_gui and create solution files through cmake
+  - the easies way to compile the code on windows would be **cmake_gui** which creates solution files
+  - Once the solution file and project files are created without errors, you should be ready to go
   
 #  Run the code
 
-Running the code is simple but get yourself familiar with the command line option. 
-The main parameter is the shape file. You can find a few in ./mesh folder. 
+Running the code is simple but get yourself familiar with the command line options first. 
+The main parameter is a shape file. You can find a few in ./mesh folder. 
 The number of segments is specified by **-k** flag followed by an integer. 
 You can also turn on/off visualization. Shape features can be either Shape Diameter function (SDF) or Average Geodesic Distance. 
 See the usage below for more details. 
@@ -30,3 +31,11 @@ usage: ./build/segment [-g] [-k #] [-sdf|-geo] mesh_file (*obj or *off)
     -sdf: segment using shape diameter function (default)
     -geo: segment using average geodesic distance
 ```
+
+For example, try:
+
+  `./build/segment -g -k 8 ./mesh/Centaur-1000.obj`
+
+You will see the following images: 
+<img src="imgs/seg-random-front.png" width=450/> <img src="imgs/seg-random-side.png" width=450/>
+
