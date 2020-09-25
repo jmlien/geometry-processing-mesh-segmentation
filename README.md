@@ -8,7 +8,8 @@ Geometry processing mesh segmentation code using spectral clustering
 - Understand the limitations in traditional shape segmentation methods
 
 <img src="imgs/seg-10-front.png" width=450/><img src="imgs/seg-10-side.png" width=450/>
-(results produced by the completed code with _K_=10 )
+
+(Fig. 1: results produced by the completed code with _K_=10 )
 
 ## Compile the code 
 
@@ -43,7 +44,7 @@ For example, try:
 You will see the following images with faces randomly clustered (note: faces with the same color are in the same cluster): 
 
 <img src="imgs/seg-random-front.png" width=450/><img src="imgs/seg-random-side.png" width=450/>
-
+(Fig. 2: random clustering with _K_=8 )
 
 ## Tasks
 
@@ -72,5 +73,10 @@ You will see the following images with faces randomly clustered (note: faces wit
     - For each cluster _C_, identify the largest compnent _M_ in _C_ and mark the faces _C_ that do not belong _M_ as unassigned.
     - After the first step, each cluster now only has a single connected compnent.
     - Iteratively expand each cluster _C_ if _C_ is adjacent to an unassigned face. If an unassigned face _f_ is adjacent to multiple clusters, _f_ should be assigned to the cluster with faces most similar to _f_. 
+
+  3. You might also want to optimize for the boundaries between clusters so they are as short as possible and pass through some important shape features, such as joints.
     
     
+<img src="imgs/seg-random-front.png" width=450/><img src="imgs/seg-random-side.png" width=450/>
+(Fig. 3: results produced by the completed code with _K_=12; the boundaries in this example are not optimized. )
+
