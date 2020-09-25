@@ -43,7 +43,7 @@ void spectral_clustering
   sF=F;
 
   //YOUR CODE HERE
-  
+
   //make sure that faces in the same cluster are connected
   repair_clusters(V,F,sF,sFC);
 }
@@ -179,7 +179,7 @@ kmeans_cluster(const Eigen::MatrixXd& data, int ncentres)
 		double e = minvals.sum();
 		double ediff = fabs(old_e - e);
 		double cdiff = (centres-old_centres).array().abs().maxCoeff();
-		std::cout << "Cycle " << n << " Error " << e << " Movement " << cdiff << ", " << ediff << std::endl;
+		//std::cout << "Cycle " << n << " Error " << e << " Movement " << cdiff << ", " << ediff << std::endl;
 
 		if (n > 1) {
 			//Test for termination
