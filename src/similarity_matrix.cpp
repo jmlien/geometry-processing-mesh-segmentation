@@ -8,7 +8,12 @@ per_face_features: |F|*1 feature vector
 
 Output:
 similarity: a symmetric |F|*|F| similarity matrix containing values [0,1];
-a pair of faces has value 0 if they are a perfect match.
+
+- A value of 0 means a pair of faces are very different and should be classified into different clusters.
+- A large value means a pair of faces have high similarity and should be classified into the same cluster.
+- The matrix should be symmetric
+- The diagonal should be all 0s
+
 */
 
 void compute_similarity_maxtrix
